@@ -1,0 +1,59 @@
+/* Footer Styles */
+#footer {
+  padding: 2rem 0;
+}
+
+/* Container and layout adjustments */
+.footer_container {
+  display: grid;
+  gap: 2rem;
+}
+
+.footer-header {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.footer-links,
+.footer-links li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+/* Responsive Adjustments */
+@media (min-width: 640px) {
+  .footer_container {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on small screens */
+  }
+
+  .footer-header {
+      font-size:1.2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer_container {
+    grid-template-columns: repeat(4, 1fr); /* 4 columns on large screens */
+  }
+
+  .footer-header {
+      font-size: 1.25rem;
+  }
+}
